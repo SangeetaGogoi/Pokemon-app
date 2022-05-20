@@ -1,38 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-page {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  background-color: rgb(246, 178, 53);
+  margin-top: 20px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+.header-page {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.banner {
+  height: 100px;
+  width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-page {
+  padding: 10px 20px 0px 30px;
+}
+
+.search-bar {
+  color: black;
+  width: 15%;
+  padding: 5px;
+  border: 2px solid rgb(90, 90, 90);
+  border-radius: 15px;
 }
